@@ -9,7 +9,7 @@ import {
   Register,
   ResetPassword
 } from '@pages';
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 import {
   AppHeader,
   Modal,
@@ -176,9 +176,9 @@ const AppRoutes = () => {
 };
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <AppRoutes />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
